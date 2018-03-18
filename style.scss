@@ -87,9 +87,17 @@ h1, h1 a, h2 {
         float: left;
     }
 
+    .wrapper-masthead::-webkit-scrollbar {
+        display: none;
+    }
+
     .wrapper-masthead > div {
         height: 100vh;
         overflow-y: scroll;
+    }
+
+    .wrapper-masthead > div::-webkit-scrollbar {
+        display: none;
     }
 
     #main {

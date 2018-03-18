@@ -1,53 +1,53 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+    <head>
+        <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
-    {% include meta.html %}
+        {% include meta.html %}
 
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+        <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
 
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+        <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+        <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
-  </head>
+        <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+    </head>
 
-  <body>
-      <div class="page-container clearfix">
-          <div class="wrapper-masthead">
-              <div class="">
-                  <header class="masthead clearfix">
-                      <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-                      <p>
-                          Is an open, public archive. The stories featured here are queer experiences, memories, and views of
-                          porn from UK based 18-35 year olds.
-                      </p>
-                      <p>
-                          If you have a story to tell or an observation to make – submit!
-                      </p>
-                      <p>
-                          Created as part of Goldsmiths, UoL Queer History MA in collaboration with [etc.].
-                      </p>
+    <body>
+        <div class="page-container clearfix">
+            <div class="wrapper-masthead">
+                <div class="">
+                    <header class="masthead clearfix">
+                        <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+                        <p>
+                            Is an open, public archive. The stories featured here are queer experiences, memories, and views of
+                            porn from UK based 18-35 year olds.
+                        </p>
+                        <p>
+                            If you have a story to tell or an observation to make – submit!
+                        </p>
+                        <p>
+                            Created as part of Goldsmiths, UoL Queer History MA in collaboration with [etc.].
+                        </p>
 
-                      <nav>
-                          {% if page.layout != 'submit' %}
-                          <a href="{{ site.baseurl }}/submit">Submit</a>
-                          {% else %}
-                          <a href="{{ site.baseurl }}/">Home</a>
-                          {% endif %}
-                      </nav>
-                  </header>
-              </div>
-          </div>
+                        <nav>
+                            {% if page.layout != 'submit' %}
+                            <a href="{{ site.baseurl }}/submit">Submit</a>
+                            {% else %}
+                            <a href="{{ site.baseurl }}/">Home</a>
+                            {% endif %}
+                        </nav>
+                    </header>
+                </div>
+            </div>
 
-          <div id="main" role="main" class="container">
-              {{ content }}
-          </div>
+            <div id="main" role="main" class="container">
+                {{ content }}
+            </div>
 
-</div>
+        </div>
 
-  </body>
+    </body>
 </html>

@@ -85,6 +85,7 @@ h1, h1 a, h2 {
         // min-width: 200px;
         width: 30%;
         float: left;
+        overflow-x: hidden;
     }
 
     .wrapper-masthead::-webkit-scrollbar {
@@ -94,6 +95,7 @@ h1, h1 a, h2 {
     .wrapper-masthead > div {
         height: 100vh;
         overflow-y: scroll;
+        overflow-x: hidden;
     }
 
     .wrapper-masthead > div::-webkit-scrollbar {

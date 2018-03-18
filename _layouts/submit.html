@@ -1,0 +1,47 @@
+---
+layout: default
+---
+
+<article class="page">
+
+    <h2>{{ page.title }}</h2>
+
+    <div>Are you queer and watch porn? Are you not but watch queer porn? Have you ever had a queer
+        experience with porn? We would like to hear from you about your personal (or not so personal)
+        memories and experiences of porn. We’d like to hear about how you’ve searched for, viewed,
+        experienced, collected, stored, organised, hidden, shared… and got off to, porn, how porn has
+        shaped you – your desires, perceptions, and sexuality – and anything else you can think of. Please
+        write as much as you like, from a single memory or observation, to your entire porn history. Every
+        reply is important.</div>
+
+        <form action="https://getsimpleform.com/messages?form_api_token=bb6b50e0ffc0964db481f4a7879d9dcb" method="post">
+          <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
+          <!-- <input type='hidden' name='redirect_to' value='http://127.0.0.1:4000/' /> -->
+          <!-- all your input fields here.... -->
+          <label for='year'>Year of Birth*:</label>
+          <input type='text' name='year' required />
+
+          <label for='email'>Email Address*:</label>
+          <input type='text' name='email' required />
+
+          <label for='gender'>Gender:</label>
+          <input type='text' name='gender' require />
+
+          <label for='gender'>Gender:</label>
+          <input type='text' name='gender' require />
+
+          <label for='submission'>Submission*:</label>
+          <textarea name="submission" rows="8"></textarea>
+
+          <input type='checkbox' name='agreement' required>
+          <label for='agreement'>By ticking this box I confirm that I have the consent agreement and wish to participate</label>
+
+
+          <input type='submit' value='Test form' />
+        </form>
+
+
+    <div class="entry">
+        {{ content }}
+    </div>
+</article>

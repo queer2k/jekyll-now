@@ -43,7 +43,11 @@
                 </div>
             </div>
 
-            <div id="main" role="main" class="container">
+            {% if page.layout != 'submit' %}
+                <div id="main" role="main" class="container">
+            {% else %}
+                <div id="main" role="main" class="container submit">
+            {% endif %}
                 {{ content }}
             </div>
 

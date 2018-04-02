@@ -4,16 +4,16 @@ layout: default
 
 <div class="posts">
   {% for post in site.posts %}
-    <article class="post">
+    <article class="post {{ post.color }}">
 
-      <p>{{ post.content }}</p>
-      <p>
+      <div>{{ post.content }}</div>
+      <div>
           <span>{{ post.year }}</span>
           <span>/</span>
           <span>{{ post.gender }}</span>
           <span>/</span>
           <span>{{ post.sexuality }}</span>
-      </p>
+      </div>
 
       <!-- <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a> -->
     </article>

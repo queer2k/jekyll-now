@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<article class="page">
+<article class="page submit">
 
     <h2>{{ page.title }}</h2>
 
@@ -18,26 +18,42 @@ layout: default
           <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
           <input type='hidden' name='redirect_to' value='https://queer2k.github.io/thanks' />
           <!-- all your input fields here.... -->
-          <label for='year'>Year of Birth*:</label>
-          <input type='text' name='year' required />
 
-          <label for='email'>Email Address*:</label>
-          <input type='text' name='email' required />
+          <div class='fields'>
+              <div>
+                  <label for='year'>Year of Birth*:</label>
+                  <input type='text' name='year' required />
+              </div>
 
-          <label for='gender'>Gender:</label>
-          <input type='text' name='gender' require />
+              <div>
+                  <label for='email'>Email Address*:</label>
+                  <input type='text' name='email' required />
+                  <p>please leave your email address if you would like to receive updates from queer2k. Your personal information is private and confidential.</p>
+              </div>
 
-          <label for='gender'>Gender:</label>
-          <input type='text' name='gender' require />
+              <div>
+                  <label for='gender'>Gender:</label>
+                  <input type='text' name='gender' />
+              </div>
 
-          <label for='submission'>Submission*:</label>
-          <textarea name="submission" rows="8"></textarea>
+              <div>
+                  <label for='gender'>Sexuality:</label>
+                  <input type='text' name='sexuality' />
+              </div>
 
-          <input type='checkbox' name='agreement' required>
-          <label for='agreement'>By ticking this box I confirm that I have the consent agreement and wish to participate</label>
+              <div>
+                  <label for='submission'>Submission*:</label>
+                  <textarea name="submission" rows="8"></textarea>
+                  <p>*: Required</p>
+              </div>
+          </div>
 
+          <div>
+              <input type='checkbox' name='agreement' required>
+              <label for='agreement'>By ticking this box I confirm that I have the consent agreement and wish to participate.</label>
+          </div>
 
-          <input type='submit' value='Test form' />
+          <input type='submit' value='Submit' />
         </form>
 
 

@@ -212,6 +212,10 @@ form .fields textarea {
     border: 1px solid black;
 }
 
+input, textarea {
+    cursor: pointer;
+}
+
 form input[type='submit'] {
     background-color: white;
     border: 1px solid black;

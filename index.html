@@ -6,7 +6,17 @@ layout: default
   {% for post in site.posts %}
     <article class="post {{ post.color }}">
 
-      <div>{{ post.content }}</div>
+      {% if post.lengthy == true %}
+      <div>
+          <div class="paragraph">{{ post.excerpt }}</div>
+          <div class="paragraph hide">{{ post.content }}</div>
+          <div class="toggle">Read More</div>
+          <div class="toggle hide">Show Less</div>
+      </div>
+      {% else  %}
+           <div class="">{{ post.content }}</div>
+      {% endif %}
+
       <div>
           <span>{{ post.year }}</span>
           <span>/</span>

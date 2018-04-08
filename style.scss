@@ -237,6 +237,22 @@ form input[type='checkbox'] {
     }
 }
 
+.hide {
+    display: none;
+}
+
+.paragraph p {
+    margin: 0;
+}
+
+.toggle {
+    margin: 18px 0;
+    cursor: pointer;
+    text-decoration: underline;
+    // border-bottom: 1px solid black;
+    line-height: 1.1;
+}
+
 .white {
     background-color: #ffffff;
 }

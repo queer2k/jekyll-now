@@ -4,7 +4,7 @@ title: Submit
 permalink: /submit/
 ---
 
-PLEASE READ: You must be at least 18 to submit. All submissions are confidential and anonymous.
+**PLEASE READ:** You must be at least 18 to submit. All submissions are confidential and anonymous.
 Any names included will be removed and replaced with [name]. There is no requirement to disclose
 gender or sexuality to participate. By submitting to queer2k.uk you consent to your submission
 being published, archived, and used for further research. But don’t worry, all email addresses and
